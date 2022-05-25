@@ -1,0 +1,50 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>187</y><w>330</w><h>209</h></coordinates><panel_attributes>Empresa
+--
+
+
+--
++ armarTren(int, int, String, String): Tren
++ armarTrenClasico(String, String): Tren
+- dameVagones(TipoVagon, int): ArrayList&lt;Vagon&gt;
+- dameMaquinista(String): Maquinista
+- agregarTrenMaquinista(String, Tren): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>814</x><y>187</y><w>231</w><h>209</h></coordinates><panel_attributes>Vagon
+--
+- nroSerie: String
+- enReparacion: boolean
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1144</x><y>187</y><w>231</w><h>209</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+TipoVagon
+--
+_+ LOCOMOTORA_
+_+ CARGA_
+_+ PASAJERO_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>484</x><y>495</y><w>231</w><h>209</h></coordinates><panel_attributes>Maquinista
+--
+- nombre: String
+- dni: String
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1034</x><y>209</y><w>132</w><h>55</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-tipo</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>462</x><y>187</y><w>253</w><h>209</h></coordinates><panel_attributes>Tren
+--
+- destino: String
+_- terminal: String_
+
+--
++ agregarVagon(int, TipoVagon): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>704</x><y>275</y><w>132</w><h>55</h></coordinates><panel_attributes>lt=&lt;-
+m1=2..n
+- vagones</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>1210</x><y>99</y><w>154</w><h>77</h></coordinates><panel_attributes>Note..
+bg=blue
+preguntar: static?
+SIEMPRE</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>627</x><y>385</y><w>66</w><h>132</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..1
+- tren</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>319</x><y>330</y><w>187</w><h>264</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+- maquinistas</panel_attributes><additional_attributes>150;210;80;210;80;10;11;10</additional_attributes></element><element><id>Relation</id><coordinates><x>319</x><y>242</y><w>165</w><h>55</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+- trenes</panel_attributes><additional_attributes>130;20;11;20</additional_attributes></element><element><id>Relation</id><coordinates><x>297</x><y>66</y><w>660</w><h>143</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+- vagonesLibres</panel_attributes><additional_attributes>560;110;560;20;10;20;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>517</x><y>385</y><w>110</w><h>132</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..1
+- maquinista</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element></diagram>
